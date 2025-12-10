@@ -8,6 +8,7 @@ KZ:
   ioc: KAZ
   gec: KZ
   name: Kazakhstan
+  flag: '🇰🇿'
   national_destination_code_lengths:
   - 3
   national_number_lengths:

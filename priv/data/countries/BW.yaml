@@ -8,6 +8,7 @@ BW:
   ioc: BOT
   gec: BC
   name: Botswana
+  flag: '🇧🇼'
   national_destination_code_lengths:
   - 2
   national_number_lengths:

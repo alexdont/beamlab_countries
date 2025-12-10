@@ -8,12 +8,13 @@ BO:
   ioc: BOL
   gec: BL
   name: Bolivia (Plurinational State of)
+  flag: '🇧🇴'
   national_destination_code_lengths:
   - 2
   national_number_lengths:
   - 8
   national_prefix: '010'
-  number: 068
+  number: '068'
   region: Americas
   subregion: South America
   world_region: AMER

@@ -8,6 +8,7 @@ SV:
   ioc: ESA
   gec: ES
   name: El Salvador
+  flag: '🇸🇻'
   national_destination_code_lengths:
   - 2
   national_number_lengths:

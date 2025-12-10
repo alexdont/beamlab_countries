@@ -8,6 +8,7 @@ EC:
   ioc: ECU
   gec: EC
   name: Ecuador
+  flag: '🇪🇨'
   national_destination_code_lengths:
   - 2
   national_number_lengths:

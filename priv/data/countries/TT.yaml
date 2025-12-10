@@ -9,6 +9,7 @@ TT:
   ioc: TRI
   gec: TD
   name: Trinidad and Tobago
+  flag: '🇹🇹'
   national_destination_code_lengths:
   - 3
   national_number_lengths:

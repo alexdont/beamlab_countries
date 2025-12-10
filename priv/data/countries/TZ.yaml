@@ -8,6 +8,7 @@ TZ:
   ioc: TAN
   gec: TZ
   name: Tanzania, United Republic of
+  flag: '🇹🇿'
   national_destination_code_lengths:
   - 2
   national_number_lengths:

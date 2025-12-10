@@ -9,12 +9,13 @@ VG:
   ioc: IVB
   gec: VI
   name: Virgin Islands (British)
+  flag: '🇻🇬'
   national_destination_code_lengths:
   - 3
   national_number_lengths:
   - 10
   national_prefix: '1'
-  number: 092
+  number: '092'
   region: Americas
   subregion: Caribbean
   world_region: AMER

@@ -8,6 +8,7 @@ MH:
   ioc: MHL
   gec: RM
   name: Marshall Islands
+  flag: '🇲🇭'
   national_destination_code_lengths:
   - 2
   national_number_lengths:

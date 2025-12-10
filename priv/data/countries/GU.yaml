@@ -9,6 +9,7 @@ GU:
   ioc: GUM
   gec: GQ
   name: Guam
+  flag: '🇬🇺'
   national_destination_code_lengths:
   - 3
   national_number_lengths:

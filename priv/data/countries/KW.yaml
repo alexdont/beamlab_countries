@@ -14,6 +14,7 @@ KW:
   ioc: KUW
   gec: KU
   name: Kuwait
+  flag: '🇰🇼'
   national_destination_code_lengths:
   - 2
   national_number_lengths:

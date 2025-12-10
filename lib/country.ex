@@ -9,6 +9,7 @@ defmodule PkCountries.Country do
     :alpha3,
     :currency,
     :name,
+    :flag,
     :unofficial_names,
     :continent,
     :region,

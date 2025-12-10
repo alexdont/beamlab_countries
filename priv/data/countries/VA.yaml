@@ -8,6 +8,7 @@ VA:
   ioc: 
   gec: VT
   name: Holy See
+  flag: '🇻🇦'
   national_destination_code_lengths:
   - 3
   national_number_lengths:

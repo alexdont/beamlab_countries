@@ -15,6 +15,7 @@ ZA:
   ioc: RSA
   gec: SF
   name: South Africa
+  flag: '🇿🇦'
   national_destination_code_lengths:
   - 2
   national_number_lengths:

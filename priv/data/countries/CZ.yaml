@@ -13,6 +13,7 @@ CZ:
   ioc: CZE
   gec: EZ
   name: Czech Republic
+  flag: '🇨🇿'
   national_destination_code_lengths:
   - 2
   national_number_lengths:
