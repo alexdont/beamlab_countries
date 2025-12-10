@@ -113,12 +113,9 @@ defmodule PkCountries do
   defp equals_or_contains_in_list(nil, _), do: false
   defp equals_or_contains_in_list([], _), do: false
 
-  defp equals_or_contains_in_list([attribute | rest], value) do
-    if equals_or_contains_in_list(attribute, value) do
-      true
-    else
-      equals_or_contains_in_list(rest, value)
-    end
+  defp equals_or_contains_in_list(list, value) when is_list(list) do
+    normalized_value = normalize(value)
+    Enum.any?(list, &(normalize(&1) == normalized_value))
   end
 
   defp equals_or_contains_in_list(attribute, value),
