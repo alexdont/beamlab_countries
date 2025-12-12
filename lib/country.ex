@@ -3,6 +3,41 @@ defmodule BeamLabCountries.Country do
   Country struct.
   """
 
+  @type t :: %__MODULE__{
+          number: integer() | nil,
+          alpha2: String.t() | nil,
+          alpha3: String.t() | nil,
+          currency: String.t() | nil,
+          name: String.t() | nil,
+          flag: String.t() | nil,
+          unofficial_names: [String.t()] | nil,
+          continent: String.t() | nil,
+          region: String.t() | nil,
+          subregion: String.t() | nil,
+          geo: map() | nil,
+          world_region: String.t() | nil,
+          country_code: String.t() | nil,
+          national_destination_code_lengths: [integer()] | nil,
+          national_number_lengths: [integer()] | nil,
+          international_prefix: String.t() | nil,
+          national_prefix: String.t() | nil,
+          ioc: String.t() | nil,
+          gec: String.t() | nil,
+          un_locode: String.t() | nil,
+          languages_official: [String.t()] | nil,
+          languages_spoken: [String.t()] | nil,
+          nationality: String.t() | nil,
+          address_format: String.t() | nil,
+          dissolved_on: String.t() | nil,
+          eu_member: boolean() | nil,
+          eea_member: boolean() | nil,
+          alt_currency: String.t() | nil,
+          vat_rates: map() | nil,
+          postal_code: String.t() | nil,
+          currency_code: String.t() | nil,
+          start_of_week: String.t() | nil
+        }
+
   defstruct [
     :number,
     :alpha2,
