@@ -258,7 +258,10 @@ defmodule BeamLabCountries.Languages do
           name: data["name"],
           native_name: data["nativeName"],
           flag: country && country.flag,
-          country_name: country && country.name
+          country_name: country && country.name,
+          continent: country && country.continent,
+          region: country && country.region,
+          subregion: country && country.subregion
         }
     end
   end
@@ -286,7 +289,10 @@ defmodule BeamLabCountries.Languages do
         name: data["name"],
         native_name: data["nativeName"],
         flag: country && country.flag,
-        country_name: country && country.name
+        country_name: country && country.name,
+        continent: country && country.continent,
+        region: country && country.region,
+        subregion: country && country.subregion
       }
     end)
     |> Enum.sort_by(& &1.name)

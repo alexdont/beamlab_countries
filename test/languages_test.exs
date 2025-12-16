@@ -125,20 +125,30 @@ defmodule BeamLabCountries.LanguagesTest do
       assert locale.native_name == "English (US)"
       assert locale.flag == "🇺🇸"
       assert locale.country_name == "United States of America"
+      assert locale.continent == "North America"
+      assert locale.region == "Americas"
+      assert locale.subregion == "Northern America"
     end
 
     test "returns Locale for various locales" do
       locale = Languages.get_locale("es-ES")
       assert locale.name == "Spanish (Spain)"
       assert locale.flag == "🇪🇸"
+      assert locale.continent == "Europe"
+      assert locale.region == "Europe"
+      assert locale.subregion == "Southern Europe"
 
       locale = Languages.get_locale("pt-BR")
       assert locale.name == "Portuguese (Brazil)"
       assert locale.flag == "🇧🇷"
+      assert locale.continent == "South America"
+      assert locale.region == "Americas"
 
       locale = Languages.get_locale("de-DE")
       assert locale.name == "German (Germany)"
       assert locale.flag == "🇩🇪"
+      assert locale.continent == "Europe"
+      assert locale.subregion == "Western Europe"
     end
 
     test "returns nil for invalid locale" do
@@ -165,6 +175,18 @@ defmodule BeamLabCountries.LanguagesTest do
       # Most locales should have flags (some obscure regions might not)
       with_flags = Enum.filter(locales, & &1.flag)
       assert length(with_flags) > 80
+    end
+
+    test "all locales have geographic data" do
+      locales = Languages.all_locales()
+      # All locales should have continent, region, and subregion
+      with_continent = Enum.filter(locales, & &1.continent)
+      with_region = Enum.filter(locales, & &1.region)
+      with_subregion = Enum.filter(locales, & &1.subregion)
+
+      assert length(with_continent) > 80
+      assert length(with_region) > 80
+      assert length(with_subregion) > 80
     end
   end
 
